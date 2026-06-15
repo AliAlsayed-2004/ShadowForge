@@ -87,7 +87,7 @@ def main():
         for w in words:
             f.write(w + "\n")
 
-    print(f"\n[✔] Saved → {path}\n")
+    print(f"\n[+] Saved → {path}\n")
 
 
 if __name__ == "__main__":
