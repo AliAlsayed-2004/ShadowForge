@@ -10,6 +10,7 @@ wordlists suitable for offline use.
 extension.
 
 **Key features**
+
 - Interactive wizard for building generation profiles (`ui/wizard.py`).
 - Pattern & permutation engine that combines base words, keywords, numbers and
   symbols (`core/generator.py`).
@@ -32,6 +33,12 @@ Run the interactive wizard to build and save a wordlist:
 
 ```powershell
 python shadowforge.py
+```
+
+Non-interactive mode is available by passing CLI options directly:
+
+```powershell
+python shadowforge.py -p "acme corp" -k admin support --min 6 --max 12 --leet --use-symbols --symbols "!@" --digits 2 4 --numbers-mode random --limit 50000
 ```
 
 The tool will prompt for base names, keywords, length constraints, whether to
