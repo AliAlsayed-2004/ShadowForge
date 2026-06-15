@@ -42,7 +42,6 @@ class Banner:
 
         print(top)
 
-        # ثابت (no randomness → branding consistency)
         logo = pyfiglet.figlet_format(
             self.name,
             font="slant",
