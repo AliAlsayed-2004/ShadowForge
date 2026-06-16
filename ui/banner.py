@@ -32,6 +32,10 @@ class Banner:
             return min(os.get_terminal_size().columns, 110)
         except:
             return 100
+        
+    def _clear(self):
+        os.system('cls' if os.name == 'nt' else 'clear')
+
 
     # ----------------------------
     # CLEAN PRINT (smooth, no flicker)
@@ -102,11 +106,13 @@ class Banner:
     # MAIN BANNER
     # ----------------------------
     def show(self):
-
+        self._clear()
         width = self._width()
 
         # intro sequence (system takeover feel)
         self._intro()
+        self._clear()
+
 
         # border pulse effect
         self._pulse_border(width)
@@ -120,7 +126,7 @@ class Banner:
         # ASCII logo (smooth, no glitch)
         logo = pyfiglet.figlet_format(
             self.name,
-            font="slant",
+            font="speed",
             width=width - 2
         )
 

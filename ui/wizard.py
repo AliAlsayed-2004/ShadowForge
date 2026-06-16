@@ -37,7 +37,7 @@ def wizard():
 
     limit = int(input(f"{Colors.YELLOW}[?] Limit [100000]: ") or 100000)
 
-    print(f"\n{Colors.GREEN}[✔] Configuration locked. Generating...\n")
+    print(f"\n{Colors.GREEN}[+] Configuration locked. Generating...\n")
 
     return {
         "profile": profile,
