@@ -11,7 +11,7 @@ from ui.colors import Colors
 class Banner:
 
     def __init__(self):
-        self.name = "ShadowForge"
+        self.name = "Shadow  Forge"
         self.subtitle = "Wordlist Generation Framework"
 
         # Theme system (plugin-ready)
@@ -126,7 +126,7 @@ class Banner:
         # ASCII logo (smooth, no glitch)
         logo = pyfiglet.figlet_format(
             self.name,
-            font="speed",
+            font="doom",
             width=width - 2
         )
 
